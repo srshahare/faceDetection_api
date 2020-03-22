@@ -50,6 +50,6 @@ app.get('/profile/:id', (req, res)=> {
 app.put('/image', (req, res) => {image.handleImage(req, res, db)})
 // app.post('/imageurl', (req, res) => {image.handleApiCall(req, res)})
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(`Server started on port ${process.env.PORT}`);
 })
